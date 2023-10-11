@@ -30,48 +30,50 @@
     <!-- ________________ // header // ________________ -->
     <header>
         <div class="container">
-            <div class=" d-flex justify-content-end align-items-center py-10 gap-10">
-                <a href="#" class="btn main_btn main bg-purple butn__new"> الخدمات الالكترونيه</a>
-                <div class=" main_menu burger-icon  wh-color ">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-
-            <div class=" d-flex justify-content-between align-items-center py-10">
-                <a href="index.html" class="d-block"><img src="img/logo.png" alt="logo" class="logo"></a>
-                <ul class="navbar">
-                    <li><a href="index.html"> الرئيسية </a></li>
-                    <li><a href="aboutAcademy.html"> عن الاكاديمية </a></li>
-                    <li><a href="programs.html"> برامجنا </a></li>
-                    <li><a href="programsAndCourses.html"> برامجي ودوراتي </a></li>
-                    <li><a href="SeminarsAndConferences.html"> الندوات والمؤتمرات </a></li>
-                    <li><a href="contactUs.html"> تواصل معنا</a></li>
-                    <li><a href="documentLibrary.html"> مكتبة المستندات</a></li>
-                </ul>
-                <div class="d-flex align-items-center gap-10">
-
-                    <a class="btn main_btn register bg-main2 butn__new" href="personalAccount.html"> الحساب الشخصي </a>
-                    <a href="#" class="text-danger rotateX"> <i class="fa-solid fa-arrow-right-from-bracket"></i> </a>
-
-                    <div class=" dropdown-toggle lang " data-toggle="dropdown" aria-expanded="false">
-                        <p class="ar">EN</p>
+            <div class="py-10">
+                <div class=" d-flex justify-content-end align-items-center  gap-10 mb-1">
+                    <a href="#" class="btn main_btn main bg-purple butn__new"> الخدمات الالكترونيه</a>
+                    <div class=" main_menu burger-icon  wh-color ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="dropdown-menu lang-dropdown-menu f-13 m-end-10">
-                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                            <p class="">AR</p>
+                </div>
+                <div class=" d-flex justify-content-between align-items-center ">
+                    <a href="index.html" class="d-block"><img src="img/logo.png" alt="logo" class="logo"></a>
+                    <ul class="navbar">
+                        <li><a href="index.html"> الرئيسية </a></li>
+                        <li><a href="aboutAcademy.html"> عن الاكاديمية </a></li>
+                        <li><a href="programs.html"> برامجنا </a></li>
+                        <li><a href="programsAndCourses.html"> برامجي ودوراتي </a></li>
+                        <li><a href="SeminarsAndConferences.html"> الندوات والمؤتمرات </a></li>
+                        <li><a href="contactUs.html"> تواصل معنا</a></li>
+                        <li><a href="documentLibrary.html"> مكتبة المستندات</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-10">
+
+                        <a class="btn main_btn register bg-main2 butn__new" href="personalAccount.html"> الحساب الشخصي
+                        </a>
+                        <a href="#" class="text-danger rotateX"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
                         </a>
 
-                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
-                            <p class="">EN</p>
-                        </a>
+                        <div class=" dropdown-toggle lang " data-toggle="dropdown" aria-expanded="false">
+                            <p class="ar">EN</p>
+                        </div>
+                        <div class="dropdown-menu lang-dropdown-menu f-13 m-end-10">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <p class="">AR</p>
+                            </a>
+
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <p class="">EN</p>
+                            </a>
+                        </div>
+
                     </div>
 
                 </div>
-
             </div>
-        </div>
         </div>
     </header>
     <!-- _____________ // body-content // _____________ -->
@@ -590,7 +592,7 @@
         /////////////    window.addEventListener('scroll', () => {
             window.addEventListener('scroll', () => {
             let scrollTop = document.documentElement.scrollTop;
-            if (scrollTop >= 550) {
+            if (scrollTop >= 200) {
                 document.querySelector('header').classList.add('active')
 
             } else {

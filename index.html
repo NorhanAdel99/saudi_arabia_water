@@ -29,7 +29,8 @@
     <!-- ________________ // header // ________________ -->
     <header class="main">
         <div class="container">
-            <div class=" d-flex justify-content-end align-items-center py-10 gap-10">
+           <div class="py-10">
+            <div class=" d-flex justify-content-end align-items-center gap-10 mb-1">
                 <a href="#" class="btn main_btn main bg-purple butn__new"> الخدمات الالكترونيه</a>
                 <div class=" main_menu burger-icon  wh-color ">
                     <span></span>
@@ -38,7 +39,7 @@
                 </div>
             </div>
 
-            <div class=" d-flex justify-content-between align-items-center py-10">
+            <div class=" d-flex justify-content-between align-items-center ">
                 <a href="index.html" class="d-block"><img src="img/logo.png" alt="logo" class="logo"></a>
                 <ul class="navbar">
                     <li class=""><a href="index.html"> الرئيسية </a></li>
@@ -69,7 +70,7 @@
                 </div>
 
             </div>
-        </div>
+           </div>
         </div>
     </header>
     <!-- ________________ // header after-login // ________________ -->
@@ -141,7 +142,7 @@
                                         النص هو مثال لنص ممكن ان يستبدل
                                         هو مثال لنص ممكن ان يستبدل </p>
                                     <div
-                                        class="mb-4  d-flex gap-10 flex-wrap align-items-center justify-content-around">
+                                        class="d-flex gap-10 flex-wrap align-items-center justify-content-around">
                                         <a href="#" class="addMoreMain gap-5   butn__new "><span class="m-end-5">عرض
                                                 المزيد</span><i class="fa-solid fa-angles-left"></i> </a>
                                         <a data-fancybox data-width="640" data-height="360" href="img/video.mp4"
@@ -874,13 +875,17 @@
         initMap();
         //////// $$ slider  $$ //////////
         $('.owl-carousel1').owlCarousel({
+     
             loop: true,
             autoplay: true,
             items: 1,
             autoplayTimeout: 2000,
             autoplayHoverPause: true,
             nav: false,
-            // navText: [$('.am-next'),$('.am-prev')],
+            smartSpeed: 2000,
+            // animateOut: 'fadeInRight',
+            lazyLoad: true,
+            navText: [$('.am-next'),$('.am-prev')],
         })
         //////// $$ slider  $$ //////////
         $('.owl-carousel2').owlCarousel({
@@ -923,9 +928,16 @@
                     var userIcon = `<i class="fa-solid fa-user"></i>`;
                     newLogIn.innerHTML = newLoginIcon;
                     login.innerHTML = userIcon;
-                    newLogIn.style.width = 'fit-content';
+                    newLogIn.style.width = '30px';
+                    newLogIn.style.height = '30px';
+                    newLogIn.style.padding = '7px'
+                    newLogIn.style.borderRadius = '50%'
                     newLogIn.style.padding = '5px'
-                    login.style.width = 'fit-content';
+
+                    login.style.width = '30px';
+                    login.style.height = '30px';
+                    login.style.padding = '7px'
+                    login.style.borderRadius = '50%'
                     login.style.padding = '5px'
 
                 } else {
@@ -937,7 +949,10 @@
                 if (e.matches) {
                     var newLoginIcon = `<i class="fa-solid fa-right-to-bracket"></i>`;
                     newLogIn.innerHTML = newLoginIcon;
-                    newLogIn.style.width = 'fit-content';
+                    newLogIn.style.width = '30px';
+                    newLogIn.style.height = '30px';
+                    newLogIn.style.padding = '7px'
+                    newLogIn.style.borderRadius = '50%'
                     newLogIn.style.padding = '5px'
                 } else {
                     newLogIn.innerHTML = ' الحساب الشخصي';
