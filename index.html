@@ -785,6 +785,17 @@
         src="https://maps.google.com/maps/api/js?&libraries=places&key=AIzaSyBNLoYGrbnQI_GMqHt6m0PSN9yA7Zvq7gA&callback=initMap"
         type="text/javascript"></script>
     <script>
+        ///////// $$ add_active_to_header $$ //////////
+        window.addEventListener('scroll', () => {
+            let scrollTop = document.documentElement.scrollTop;
+            if (scrollTop >= 300) {
+                document.querySelector('header').classList.add('active')
+
+            } else {
+                document.querySelector('header').classList.remove('active')
+
+            }
+        })
         ///////// $$ active-link $$ //////////
         let allLinks = document.querySelectorAll(".navbar a");
         allLinks.forEach((link) => {
@@ -944,6 +955,30 @@
         });
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        /////////////    window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
+            let scrollTop = document.documentElement.scrollTop;
+            if (scrollTop >= 550) {
+                document.querySelector('header').classList.add('active')
+
+            } else {
+                document.querySelector('header').classList.remove('active')
+
+            }
+        })
+        /////////////    window.addEventListener('scroll', () => {
+            window.addEventListener('scroll', () => {
+            let scrollTop = document.documentElement.scrollTop;
+            if (scrollTop >= 550) {
+                document.querySelector('header').classList.add('active')
+
+            } else {
+                document.querySelector('header').classList.remove('active')
+
+            }
         })
     </script>
 </body>

@@ -595,7 +595,17 @@
                 document.querySelector('.totalCost').style.display = 'none'
             }
         })
+        /////////////    window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
+            let scrollTop = document.documentElement.scrollTop;
+            if (scrollTop >= 550) {
+                document.querySelector('header').classList.add('active')
 
+            } else {
+                document.querySelector('header').classList.remove('active')
+
+            }
+        })
     </script>
 </body>
 

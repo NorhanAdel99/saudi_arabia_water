@@ -898,9 +898,12 @@ header.main {
     top: 0;
 }
 
-header.fixed {
+header.active {
     position: fixed;
     background: rgba(0, 0, 0, .7);
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .navbar {
@@ -1967,5 +1970,6 @@ button.close span {
     max-height: 150px;
     object-fit: contain;
   }
+
 /*  ------------------------- // personal-accout // ------------------------- // */
 /*  ------------------------- // personal-accout // ------------------------- // */

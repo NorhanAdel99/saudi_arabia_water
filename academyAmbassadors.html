@@ -332,6 +332,17 @@
         $(document).ready(function () {
             $('.select2').select2();
         });
+        /////////////    window.addEventListener('scroll', () => {
+            window.addEventListener('scroll', () => {
+            let scrollTop = document.documentElement.scrollTop;
+            if (scrollTop >= 550) {
+                document.querySelector('header').classList.add('active')
+
+            } else {
+                document.querySelector('header').classList.remove('active')
+
+            }
+        })
     </script>
 </body>
 
