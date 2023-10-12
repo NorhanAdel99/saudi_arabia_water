@@ -25,19 +25,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<style>
-    .imgPreview {
-        width: 70px;
-        height: 70px;
-        object-fit: cover;
-
-    }
-
-    .close {
-        color: var(--main);
-        margin: 0 -15px;
-    }
-</style>
 </head>
 
 <body>
@@ -46,7 +33,7 @@
         <div class="container">
             <div class="py-10">
                 <div class=" d-flex justify-content-end align-items-center  gap-10 mb-1">
-                    <a href="#" class="btn main_btn main bg-purple butn__new"> الخدمات الالكترونيه</a>
+                    <a href="electronicServices.html" class="btn main_btn main bg-purple butn__new"> الخدمات الالكترونيه</a>
                     <div class=" main_menu burger-icon  wh-color ">
                         <span></span>
                         <span></span>
@@ -636,8 +623,8 @@
         nav.onclick = function (e) {
             e.stopPropagation();
         }
-        ///////// $$ add icon to btn $$ //////////
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
+       ///////// $$ add icon to btn $$ //////////
+       const mediaQuery = window.matchMedia('(max-width: 768px)');
         function handleTabletChange(e) {
             var newLogIn = document.querySelector('.register');
             var login = document.querySelector('.logIn');
@@ -648,21 +635,29 @@
                     var userIcon = `<i class="fa-solid fa-user"></i>`;
                     newLogIn.innerHTML = newLoginIcon;
                     login.innerHTML = userIcon;
-                    newLogIn.style.width = 'fit-content';
+                    newLogIn.style.width = '30px';
+                    newLogIn.style.height = '30px';
+                    newLogIn.style.padding = '7px'
+                    newLogIn.style.borderRadius = '50%'
                     newLogIn.style.padding = '5px'
-                    login.style.width = 'fit-content';
-                    login.style.padding = '5px'
 
+                    login.style.width = '30px';
+                    login.style.height = '30px';
+                    login.style.padding = '7px'
+                    login.style.borderRadius = '50%'
+                    login.style.padding = '5px'
                 } else {
                     newLogIn.innerHTML = 'حساب  جديد';
                     login.innerHTML = 'تسجيل الدخول ';
                 }
             } else if (newLogIn || login) {
-
                 if (e.matches) {
-                    var newLoginIcon = `<i class="fa-solid fa-right-to-bracket"></i>`;
+                    var newLoginIcon = `<i class="fa-solid fa-user"></i>`;
                     newLogIn.innerHTML = newLoginIcon;
-                    newLogIn.style.width = 'fit-content';
+                    newLogIn.style.width = '30px';
+                    newLogIn.style.height = '30px';
+                    newLogIn.style.padding = '7px'
+                    newLogIn.style.borderRadius = '50%'
                     newLogIn.style.padding = '5px'
                 } else {
                     newLogIn.innerHTML = ' الحساب الشخصي';
@@ -681,7 +676,7 @@
         /////////////    window.addEventListener('scroll', () => {
             window.addEventListener('scroll', () => {
             let scrollTop = document.documentElement.scrollTop;
-            if (scrollTop >= 550) {
+            if (scrollTop >= 250) {
                 document.querySelector('header').classList.add('active')
 
             } else {
